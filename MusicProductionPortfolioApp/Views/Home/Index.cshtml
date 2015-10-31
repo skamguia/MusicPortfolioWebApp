@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html ng-app="MusicPortfolioApp" ng-controller="LandingPageController">
+<head>
+    <base href="/">
+    <title ng-bind="models.soundtrackghor"></title>
+</head>
+<body>
+    <h1> {{ models.soundtrackghor }} </h1>
+    <ul>
+        <li><a href="/latest">Latest</a></li>
+        <li><a href="/music">Music</a></li>
+        <li><a href="/shop">Shop</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/about">About</a></li>
+    </ul>
+
+    <ul>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+    </ul>
+
+    <div ng-view></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+    @Scripts.Render("~/bundles/MusicPortfolioApp")
+</body>
+</html>
